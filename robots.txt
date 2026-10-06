@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://richard-giaccio.github.io/sitemap.xml
