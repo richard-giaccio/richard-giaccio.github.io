@@ -152,8 +152,12 @@
       padding:96px 0 104px;position:relative;overflow:hidden}
     .hero:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--gold)}
     .eyebrow{color:var(--gold-2);letter-spacing:5px;font-size:13px;text-transform:uppercase;margin:0 0 18px;font-weight:600}
+    .hero-grid{display:flex;align-items:center;gap:48px;flex-wrap:wrap}
+    .hero-text{flex:1 1 360px}
+    .portrait{flex:0 0 auto;width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:center top;
+      border:4px solid var(--gold-2);box-shadow:0 10px 30px rgba(0,0,0,.35);margin:0}
     .hero h1{color:var(--paper);font-size:clamp(44px,8vw,86px);margin:0 0 .25em}
-    .hero .tag{color:#d9d2c4;font-size:clamp(19px,3.2vw,26px);max-width:40ch;margin:0 0 34px}
+    .hero .tag{color:var(--paper);font-size:clamp(19px,3.2vw,26px);max-width:40ch;margin:0 0 34px}
     .cta{display:flex;flex-wrap:wrap;gap:14px}
     .btn{display:inline-block;padding:14px 26px;border-radius:10px;font-weight:600;font-size:16px}
     .btn-gold{background:var(--gold-2);color:#1b1407}
@@ -227,14 +231,16 @@
   <main id="main">
     <span id="top"></span>
     <section class="hero" aria-labelledby="hero-h">
-      <div class="wrap">
-        <p class="eyebrow">Founder &amp; Business Owner &middot; Westchester County, NY</p>
-        <h1 id="hero-h">Richard Giaccio</h1>
-        <p class="tag">Custom homes, built by hand. Two generations of craftsmanship across Westchester County, New York.</p>
-        <div class="cta">
-          <a class="btn btn-gold" href="#contact">Get in touch</a>
-          <a class="btn btn-ghost" href="https://giaccioproperties.com" rel="noopener">View the portfolio</a>
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1 id="hero-h">Richard Giaccio</h1>
+          <p class="tag">Founder &amp; Business Owner &middot; Westchester County, NY</p>
+          <div class="cta">
+            <a class="btn btn-gold" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="https://giaccioproperties.com" rel="noopener">View the portfolio</a>
+          </div>
         </div>
+        <img class="portrait" src="assets/rich-giaccio.png" width="200" height="200" alt="Portrait of Richard Giaccio">
       </div>
     </section>
 
@@ -243,7 +249,7 @@
         <p class="sec-label">About</p>
         <h2 id="about-h">A founder, rooted in family</h2>
         <p class="lead">Richard Giaccio is managing Giaccio Properties, a family business specializing in custom homes throughout Westchester County, New York. Today he is President of Prime Payments, a Katonah-based merchant services company, and serves as Vice President of the Lewisboro Chamber of Commerce.</p>
-        <p>Richard works alongside his father, John Giaccio, carrying forward a family business passed down between generations, with every home delivered to the standard of people who put their own name on it. A graduate of Western Connecticut State University, he has spent his career in Westchester County.</p>
+        <p>Richard carries forward Giaccio Properties with every home delivered to the standard of someone who puts his own name on it. A graduate of Western Connecticut State University, he has spent his career in Westchester County.</p>
         <div class="stats">
           <div class="stat"><div class="n">73</div><div class="l">Homes built across Westchester</div></div>
           <div class="stat"><div class="n">16</div><div class="l">Communities served</div></div>
